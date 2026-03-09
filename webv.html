@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Web Design Demo</title>
+
+<!-- Viewport for Responsive Design -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* Basic Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav {
+        display: block;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Responsive Web Design</h1>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="container">
+<div class="box">Content 1</div>
+<div class="box">Content 2</div>
+<div class="box">Content 3</div>
+</div>
+
+<footer>
+<p>© 2026 Responsive Web Page</p>
+</footer>
+
+</body>
+</html>
